@@ -37,7 +37,7 @@ public:
   Point startPoint;
   Point endPoint;
 
-Vector(double sx,double sy, double ex, double ey){
+Vector(double &sx,double &sy, double &ex, double &ey){
   startPoint.x = sx;
   startPoint.y = sy;
   endPoint.x = ex;
@@ -99,27 +99,27 @@ void print() {
 //  endPoint.print();
 //  cout << endl;
 //}
-void printVector(double x0, double x1, double y0, double y1) {
-    cout << "(" << x0 << "," << y0 << ") -> (" << x1 << "," << y1 << ")" << endl;
-   }
-void offsetVector(double &x0, double &x1, double &y0, double &y1, double offsetX, double offsetY) {
-   x0 = x0 + offsetX; // - > the same as x0 = x0 + offsetX
-   x1 = x1 + offsetX;
-   y0 = y0 + offsetY;
-   y1 = y1 + offsetY;
-  }
+//void printVector(double x0, double x1, double y0, double y1) {
+//    cout << "(" << x0 << "," << y0 << ") -> (" << x1 << "," << y1 << ")" << endl;
+//   }
+//void offsetVector(double &x0, double &x1, double &y0, double &y1, double offsetX, double offsetY) {
+//   x0 = x0 + offsetX; // - > the same as x0 = x0 + offsetX
+//   x1 = x1 + offsetX;
+//   y0 = y0 + offsetY;
+//   y1 = y1 + offsetY;
+//  }
 
-void offsetPoint(Point &p, double x, double y) {
-  p.x = p.x + x;
-  p.y = p.y + y;
-}
+//void offsetPoint(Point &p, double x, double y) {
+//  p.x = p.x + x;
+//  p.y = p.y + y;
+//}
 
-void offsetVector(Vector &v, double offsetX, double offsetY){
-  v.startPoint.x = v.startPoint.x + offsetX;
-  v.endPoint.x = v.endPoint.x + offsetX;
-  v.startPoint.y = v.startPoint.y + offsetY;
-  v.endPoint.y = v.endPoint.y + offsetY;
-}
+//void offsetVector(Vector &v, double offsetX, double offsetY){
+//  v.startPoint.x = v.startPoint.x + offsetX;
+//  v.endPoint.x = v.endPoint.x + offsetX;
+//  v.startPoint.y = v.startPoint.y + offsetY;
+//  v.endPoint.y = v.endPoint.y + offsetY;
+//}
 
 
 //void printVector(Vector v){
@@ -133,8 +133,12 @@ int main() {
   //p.y = 4.0;
   //offsetPoint(p,1.0,2.0); // does nothing
   //cout << "(" << p.x << "," << p.y << ")" <<endl;
-  Vector vec(1.2,0.4,2.0,1.6);
-  Vector vec2;
+  double ax = 1.2;
+  double ay = 0.4;
+  double bx = 2.0;
+  double by = 1.6;
+  Vector vec(ax,ay,bx,by);
+  //Vector vec2;
   //Vector vec2;
   //vec.startPoint.x = 1.2;
   //vec.startPoint.y = 0.4;
@@ -145,8 +149,8 @@ int main() {
   //vec.print();
   vec.print();
   vec.offset(1.0,2.0);
-  vec2 = vec;
-  vec2.print();
+
+  vec.print();
   //vec.print();
   //Vector vecoff = vec.offset(1.0,2.0);
 
