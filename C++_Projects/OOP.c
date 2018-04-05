@@ -1,4 +1,5 @@
 #include <iostream>
+#include "string.h"
 
 using namespace std;
 
@@ -32,7 +33,7 @@ public:
       Car(const string &myLicense, const int myYear, const string &myStyle)
       : Vehicle(myLicense, myYear) , style(myStyle) {} // in Java you would use super(myLicense, myYear), but instead here you use member initializer syntax to call base-class constructor.
       const string getDesc() {
-        return /*stringify(myYear)*/  "Style: " + style + "License: " + license;
+        return /*stringify(myYear)*/"License: " + license + "\n Year: " + to_string(year) + "\n Style: " + style;
       } // Overriding this member function. / You just put the name, and you will overwride the function, when you want to act on instances of Car.
       const string &getStyle() {
         return style;
@@ -47,7 +48,7 @@ public:
       Truck(const string &myLicense, const int myYear, const string &mySize)
       : Vehicle(myLicense, myYear) , size(mySize) {}
       const string getDesc() {
-        return  "License:" + license + " , " + "Size: " + size;
+        return  "License: " + license +  "\n Year : " + to_string(year) + "\n Size: " + size;
       }
       const string &getSize() {
         return size;
@@ -63,8 +64,9 @@ public:
     cout << Tacoma.getSize() << endl;
     Car Corolla("8hfj4" , 2015 , "Sedan");
     Car C("8hfj4F3", 2003,"VANITY");
-    Car *vPtr = &C;
+    Vehicle *vPtr = &C;
     cout <<  vPtr -> getDesc() << endl;
+    return 0;
   }
 
   /* (The -> notation on line 3 just dereferences and gets a member. ptr->member is equivalent to (*ptr).member.) */
