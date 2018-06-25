@@ -5,7 +5,7 @@ using namespace std;
 
 template  <typename T, typename U> // function template. To accept a lot of datatypes
 T sum(const T a, const U b){
-  return a +b;
+  return a+b;
 }
 
 // Class Templates are also possible
@@ -15,6 +15,9 @@ class Point {
   private:
     T x;
     T y;
+
+
+
 
   public:
     Point(const T u, const T v): x(u), y(v) {} // constructor with member initializer syntax
