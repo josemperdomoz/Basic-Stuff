@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cctype>
 #include "string.h"
+
+
 using namespace std;
 
 template  <typename T, typename U> // function template. To accept a lot of datatypes
@@ -15,9 +17,6 @@ class Point {
   private:
     T x;
     T y;
-
-
-
 
   public:
     Point(const T u, const T v): x(u), y(v) {} // constructor with member initializer syntax
@@ -91,14 +90,16 @@ int main(){
     cout<< charactercontainer.uppercase() << endl;
     ArrayContainer<int, 5> intac;
     ArrayContainer<float, 10> floatac;
-    for(int i=0; i<)
-    intac.set(2,3);
-    intac.set(0,1);
-    intac.set(1,4);
-    intac.set(3,5);
-    floatac.set(3,3.5);
-    cout<< intac.get(2) << endl;
-    cout<< floatac.get(3) << endl;
+    for(int i=0; i<10;i++){
+        intac.set(2,3);
+        intac.set(0,1);
+        intac.set(1,4);
+        intac.set(3,5);
+        floatac.set(3,3.5);
+        cout<< intac.get(2) << endl;
+        cout<< floatac.get(3) << endl;
+    }
+
     for(int i=0; i<10;i++){
       cout << to_string(intac.get(i)) << endl;
     }

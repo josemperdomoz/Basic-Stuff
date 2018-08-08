@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/OOP.cpp
+iostream
+-
+string.h
+/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/string.h
+

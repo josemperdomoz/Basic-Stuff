@@ -13,6 +13,7 @@ struct USCurrency {
   //return output;
 //}
 
+
 USCurrency operator+(const USCurrency o) {
   USCurrency tmp = {0, 0};
   tmp.cents = dollars + o.cents;

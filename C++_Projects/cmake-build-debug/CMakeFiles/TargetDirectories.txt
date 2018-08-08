@@ -1,0 +1,3 @@
+/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles/C___Projects.dir
