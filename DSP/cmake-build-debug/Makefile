@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects
+CMAKE_SOURCE_DIR = /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/DSP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/DSP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/DSP/cmake-build-debug/CMakeFiles /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/DSP/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/DSP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named C___Projects
+# Target rules for targets named DSP
 
 # Build rule for target.
-C___Projects: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 C___Projects
-.PHONY : C___Projects
+DSP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DSP
+.PHONY : DSP
 
 # fast build rule for target.
-C___Projects/fast:
-	$(MAKE) -f CMakeFiles/C___Projects.dir/build.make CMakeFiles/C___Projects.dir/build
-.PHONY : C___Projects/fast
+DSP/fast:
+	$(MAKE) -f CMakeFiles/DSP.dir/build.make CMakeFiles/DSP.dir/build
+.PHONY : DSP/fast
 
-Class.o: Class.cpp.o
+main.o: main.cpp.o
 
-.PHONY : Class.o
+.PHONY : main.o
 
 # target to build an object file
-Class.cpp.o:
-	$(MAKE) -f CMakeFiles/C___Projects.dir/build.make CMakeFiles/C___Projects.dir/Class.cpp.o
-.PHONY : Class.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/DSP.dir/build.make CMakeFiles/DSP.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-Class.i: Class.cpp.i
+main.i: main.cpp.i
 
-.PHONY : Class.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Class.cpp.i:
-	$(MAKE) -f CMakeFiles/C___Projects.dir/build.make CMakeFiles/C___Projects.dir/Class.cpp.i
-.PHONY : Class.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/DSP.dir/build.make CMakeFiles/DSP.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-Class.s: Class.cpp.s
+main.s: main.cpp.s
 
-.PHONY : Class.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Class.cpp.s:
-	$(MAKE) -f CMakeFiles/C___Projects.dir/build.make CMakeFiles/C___Projects.dir/Class.cpp.s
-.PHONY : Class.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/DSP.dir/build.make CMakeFiles/DSP.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... C___Projects"
-	@echo "... Class.o"
-	@echo "... Class.i"
-	@echo "... Class.s"
+	@echo "... edit_cache"
+	@echo "... DSP"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

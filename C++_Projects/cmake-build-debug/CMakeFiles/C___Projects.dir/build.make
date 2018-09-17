@@ -57,38 +57,38 @@ include CMakeFiles/C___Projects.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C___Projects.dir/flags.make
 
-CMakeFiles/C___Projects.dir/OOP.cpp.o: CMakeFiles/C___Projects.dir/flags.make
-CMakeFiles/C___Projects.dir/OOP.cpp.o: ../OOP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/C___Projects.dir/OOP.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/C___Projects.dir/OOP.cpp.o -c /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/OOP.cpp
+CMakeFiles/C___Projects.dir/Class.cpp.o: CMakeFiles/C___Projects.dir/flags.make
+CMakeFiles/C___Projects.dir/Class.cpp.o: ../Class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/C___Projects.dir/Class.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/C___Projects.dir/Class.cpp.o -c /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/Class.cpp
 
-CMakeFiles/C___Projects.dir/OOP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C___Projects.dir/OOP.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/OOP.cpp > CMakeFiles/C___Projects.dir/OOP.cpp.i
+CMakeFiles/C___Projects.dir/Class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C___Projects.dir/Class.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/Class.cpp > CMakeFiles/C___Projects.dir/Class.cpp.i
 
-CMakeFiles/C___Projects.dir/OOP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C___Projects.dir/OOP.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/OOP.cpp -o CMakeFiles/C___Projects.dir/OOP.cpp.s
+CMakeFiles/C___Projects.dir/Class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C___Projects.dir/Class.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/Class.cpp -o CMakeFiles/C___Projects.dir/Class.cpp.s
 
-CMakeFiles/C___Projects.dir/OOP.cpp.o.requires:
+CMakeFiles/C___Projects.dir/Class.cpp.o.requires:
 
-.PHONY : CMakeFiles/C___Projects.dir/OOP.cpp.o.requires
+.PHONY : CMakeFiles/C___Projects.dir/Class.cpp.o.requires
 
-CMakeFiles/C___Projects.dir/OOP.cpp.o.provides: CMakeFiles/C___Projects.dir/OOP.cpp.o.requires
-	$(MAKE) -f CMakeFiles/C___Projects.dir/build.make CMakeFiles/C___Projects.dir/OOP.cpp.o.provides.build
-.PHONY : CMakeFiles/C___Projects.dir/OOP.cpp.o.provides
+CMakeFiles/C___Projects.dir/Class.cpp.o.provides: CMakeFiles/C___Projects.dir/Class.cpp.o.requires
+	$(MAKE) -f CMakeFiles/C___Projects.dir/build.make CMakeFiles/C___Projects.dir/Class.cpp.o.provides.build
+.PHONY : CMakeFiles/C___Projects.dir/Class.cpp.o.provides
 
-CMakeFiles/C___Projects.dir/OOP.cpp.o.provides.build: CMakeFiles/C___Projects.dir/OOP.cpp.o
+CMakeFiles/C___Projects.dir/Class.cpp.o.provides.build: CMakeFiles/C___Projects.dir/Class.cpp.o
 
 
 # Object files for target C___Projects
 C___Projects_OBJECTS = \
-"CMakeFiles/C___Projects.dir/OOP.cpp.o"
+"CMakeFiles/C___Projects.dir/Class.cpp.o"
 
 # External object files for target C___Projects
 C___Projects_EXTERNAL_OBJECTS =
 
-C___Projects: CMakeFiles/C___Projects.dir/OOP.cpp.o
+C___Projects: CMakeFiles/C___Projects.dir/Class.cpp.o
 C___Projects: CMakeFiles/C___Projects.dir/build.make
 C___Projects: CMakeFiles/C___Projects.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C___Projects"
@@ -99,7 +99,7 @@ CMakeFiles/C___Projects.dir/build: C___Projects
 
 .PHONY : CMakeFiles/C___Projects.dir/build
 
-CMakeFiles/C___Projects.dir/requires: CMakeFiles/C___Projects.dir/OOP.cpp.o.requires
+CMakeFiles/C___Projects.dir/requires: CMakeFiles/C___Projects.dir/Class.cpp.o.requires
 
 .PHONY : CMakeFiles/C___Projects.dir/requires
 

@@ -84,7 +84,10 @@
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/OOP.cpp">
+      <Unit filename="/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/Class.cpp">
+         <Option target="C___Projects"/>
+      </Unit>
+      <Unit filename="/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/Class.h">
          <Option target="C___Projects"/>
       </Unit>
       <Unit filename="/mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/CMakeLists.txt">

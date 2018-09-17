@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/DSP.dir/main.cpp.o  -o DSP 

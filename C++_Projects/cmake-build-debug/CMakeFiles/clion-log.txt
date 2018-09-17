@@ -1,4 +1,4 @@
-CMake executable is incorrect Configure
-
-Cannot get compiler information:
-	Error connecting to remote host localhost: Connection refused: connect
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/Usuario/Desktop/Bash/MyGitHub/C++_Projects/cmake-build-debug

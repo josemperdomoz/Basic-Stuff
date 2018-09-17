@@ -4,5 +4,5 @@ project(C___Projects)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(C___Projects
-        OOP.cpp)
+        Class.cpp)
 
